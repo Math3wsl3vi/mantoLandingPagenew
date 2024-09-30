@@ -20,7 +20,7 @@
     <img src="images/black.png" alt="" class="w-full ">
   </div>
   <nav class="w-full px-5 fixed py-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 bg-[#000000] text-black">
-      <img src="images/mantonew.png" class="w-32 cursor-pointer mr-14">
+      <img src="images/mantonew.png" class="w-[80px] cursor-pointer mr-14">
       <ul class="hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3 bg-[#dab93a] rounded-full">
       <li class="text-lg  hover:text-[#fff]"><a href="#top">Home</a></li>
       <li class="text-lg  hover:text-[#fff]"><a href="#services">Services</a></li>
@@ -70,37 +70,123 @@
 
      </div>
      <!-- services -->
-      <div class="w-full px-[12px] pb-10 scroll-mt-32 mx-auto" id="services">
+      <div class="p-10 sm:px-[50px] md:px-[100px]">
       <h4 class="text-[#dab93a] font-semibold uppercase text-center">Our Services</h4>
-     <div class="items-center flex flex-col justify-center">
-      <div class="tab-titles">
-        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Corporate Promotions & Gifts</p>
-        <p class="tab-links" onclick="opentab(event, 'experience')">Hygiene Services</p>
-      </div>
-      <div class="tab-contents-container -ml-[200px] md:ml[-100px]">
-      <div class="tab-contents active-tab text-left " id="skills" >
-        <ul class="">
-          <li>Corporate Gifts</li>
-          <li>Promotional Items</li>
-          <li>Branded Corporate Workwear</li>
-        </ul>
-      </div>
-      </div>
-      <div class="tab-contents-container ml-[220px] -mt-1">
-      <div class="tab-contents text-left" id="experience" >
-        <ul>
-        <li>Hygiene Dispenser Rental & Sales</li>
-        <li>Bathroom Paper & Consumables</li>
-        <li>Cleaning Equipment</li>
-        <li>Sanitary Bin Cleaning</li>
-        <li>Deep Cleaning</li>
-        <li>Full “Green” Chemical Ranges</li>
-        <li>Commercial Cleaning Chemicals</li>
+      <h3 class="text-center text-2xl font-bold text-gray-800 mt-2 mb-2">What we offer</h3>
+      <div class="flex flex-col gap-10 items-center md:flex-row md:justify-center md:gap-20">
+      <div class="">
+      <h1 class="text-2xl font-bold text-gray-800 mt-2 mb-2">Corporate Promotions & Gifts</h1>
+      <ul>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Corporate Gifts</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Promotional Items</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Branded Corporate Workwear</h3>
+          </div>
+        </li>
       </ul>
       </div>
+      <div>
+      <h1 class="text-2xl font-bold text-gray-800 mt-2 mb-2">Hygiene Services</h1>
+      <ul>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Hygiene Dispenser Rental & Sales</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Bathroom Paper & Consumables</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Cleaning Equipment</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Sanitary Bin Cleaning</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Deep Cleaning</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Full “Green” Chemical Rangesr</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Commercial Cleaning Chemicals</h3>
+          </div>
+        </li>
+      </ul>
     </div>
-  </div>
-</div>
+    </div>
+      </div>
+     
   <!-- About us -->
    <div class="w-full px-[12px] py-0 scroll-mt-32 mx-auto mb-10" id="aboutUs">
       <h4 class="text-[#dab93a] font-semibold uppercase text-center">About us</h4>
@@ -119,13 +205,11 @@
             <h3 class="text-lg my-4 text-[#dab93a] ">OUR VISION</h3>
             <p>To be the most trusted and respected hygiene equipment and consumables products provider company, known for our commitment to quality and customer satisfaction
           </p>
-            <a href="" class="flex items-center gap-2 text-md:mt-5">Check out <img src="images/right-arrow.png" class="w-4"></a>
         </div>
         <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-[lightHover] hover:-translate-y-1 duration-500 w-full md:w-1/2">
             <h3 class="text-lg my-4 text-[#dab93a]">OUR MISSION</h3>
             <p>To provide innovative and sustainable solutions that enhance the value and performance of our clients' businesses.
             </p>
-            <a href="" class="flex items-center gap-2 text-sm mt-5">Check out <img src="images/right-arrow.png" class="w-4"></a>
         </div>
         </div>
       
@@ -263,7 +347,7 @@
    <!-- contact -->
     <div id="contact" class="scroll-mt-[75px] mb-20 py-10 w-full">
       <h4 class="text-[#dab93a] font-semibold uppercase text-center mb-5">Get in touch</h4>
-   <p class="text-center text-lg mb-10">We would love to hear from you and discuss how we can help your business succeed.</p>
+   <p class="text-center text-2xl font-bold text-gray-800 mt-2 mb-10">We would love to hear from you and discuss how we can help your business succeed.</p>
    <div  class="bg-[#000000] text-white py-20 mx-0 rounded-md md:mx-20">
     <div class="container mx-auto px-5 lg:flex justify-between items-start gap-5">
       
@@ -271,7 +355,7 @@
       <div class="bg-[#000000] p-8 border border-white w-full lg:w-1/2 mb-8 lg:mb-0">
        <h2 class="mb-4">Fill out the form and we will have the right person get back to you</h2>
         
-        <form class="space-y-4">  
+        <form class="space-y-4" method="" action="">  
           <input type="tel" class="w-full p-3 rounded bg-gray-200 text-black focus:outline-none" placeholder="Provide Phone Number" required>
           <input type="email" class="w-full p-3 rounded bg-gray-200 text-black focus:outline-none" placeholder="Provide Email Address" required>
           
@@ -283,7 +367,7 @@
   
       <!-- Information Section -->
       <div class="bg-gradient-to-b from-[#dab93a] to-[#b88923] text-[#101B2A] p-8 w-full lg:w-1/2">
-        <h3 class="text-2xl font-semibold mb-4">When you contact us to start your journey with us now.</h3>
+        <h3 class="text-2xl font-semibold mb-4 ">When you contact us to start your journey with us now.</h3>
         <ul class="list-none space-y-2 mb-6">
           <li>Receive a call within one business day to discuss your goals, discover the latest trends and tactics in your area of interest.</li>
           <!-- <li>Schedule a live demo tailored to your unique needs and objectives.</li> -->
