@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manto Holdings</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="icon" type="image/x-icon" href="images/icon-logo.png"> -->
+    <script src="./tailwind.config.js"></script>
+    <script src="https://kit.fontawesome.com/eac1be05fe.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/mantoLogo.png">
+
+</head>
+<body class="overflow-x-hidden">
+  <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+    <img src="images/black.png" alt="" class="w-full ">
+  </div>
+  <nav class="w-full px-5 fixed py-5 lg:px-8 xl:px-[8%] flex items-center justify-between z-50 bg-[#000000] text-black">
+      <img src="images/mantoLogo.png" class="w-20 cursor-pointer mr-14">
+      <ul class="hidden md:flex items-center gap-6 lg:gap-8 px-12 py-3 bg-white shadow-sm bg-opacity-50 rounded-full border">
+      <li class="text-lg  hover:text-[#dab93a]"><a href="#top">Home</a></li>
+      <li class="text-lg  hover:text-[#dab93a]"><a href="#services">Services</a></li>
+      <li class="text-lg  hover:text-[#dab93a]"><a href="#aboutUs">About us</a></li>
+      <li class="text-lg  hover:text-[#dab93a]"><a href="#contact">Contact</a></li>
+      </ul>
+      <!-- <div class="flex gap-4 items-center">
+      <button onclick="toggleTheme()">
+          <img src="images/moon_icon.png" alt="" class="w-6 dark:hidden">
+          <img src="images/sun_icon.png" alt="" class="w-6 hidden dark:block">
+      </button>
+         <button class="block md:hidden ml-3" onclick="openMenu()">
+          <img src="images/menu-black.png" alt="" class="w-6 dark:hidden">
+          <img src="images/menu-white.png" alt="" class="w-6 hidden dark:block">
+
+      </button>
+  </div> -->
+   <!---menu for mobile-->
+   <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 h-screen z-50 bg-rose-50 transition duration-500 
+   dark:bg-[#2a004a] dark:text-white">
+
+       <div class="absolute right-6 top-6" onclick="closeMenu()">
+           <img src="images/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden">
+           <img src="images/close-white.png" alt="" class="w-5 cursor-pointer hidden dark:block">
+       </div>
+       <li><a href="#top" onclick="closeMenu()">HOME</a></li>
+       <li><a href="#services" onclick="closeMenu()">Services</a></li>
+       <li><a href="#aboutUs" onclick="closeMenu()">About</a></li>
+       <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+
+   </ul>
+</nav>
+
+<button class="block md:hidden ml-3" onclick="openMenu()">
+  <img src="images/menu-black.png" alt="" class="w-6 dark:hidden">
+  <img src="images/menu-white.png" alt="" class="w-6 hidden dark:block">
+
+</button>
+    <!-- header -->
+     <div class="w-11/12 flex flex-col mx-auto pt-[150px] gap-10 mb-40 md:flex-row md:gap-10 md:items-center md:justify-around" id="home">
+        <div class="flex flex-col">
+            <!-- <img src="images/mantoLogo.png" alt="logo" class="w-40"> -->
+            <p class="font-semibold mt-3 text-5xl ">COMING SOON!</p>
+             <h1 class="text-2xl font-semibold font-sans text-[#dab93a] sm:text-6xl lg:text-[45px] ">MANTO HOLDINGS</h1>
+             <h2 class="text-lg mt-5">Health & Hygiene Service Specialists</h2>
+            <br>
+            <p class="max-w-2xl">Our mission is to create synergies with our clients, ensure the clients <br> focus on their core business while we take care of their branding and <br> promotion and offer hygiene products.
+            </p>
+            <br>
+            <p class="max-w-2xl">We understand the demands of remaining competitive in a client-centric <br> environment, and we come in to lessen the pressure on our clients buy <br> offering those services that are not core to the business but remain <br> very essential.</p>
+            <button type="submit" class="w-1/2 mt-10 bg-[#dab93a] hover:bg-[#e59828] text-[#101B2A] font-bold py-3">
+              Contact Us
+            </button>
+        </div>
+        <div>
+            <img src="images/bg.jpg" alt="banner" class="w-[450px] h-auto rounded-md">
+        </div>
+
+     </div>
+     <!-- services -->
+      <div class="w-full px-[12px] py-20 scroll-mt-10 mx-auto" id="services">
+      <h4 class="text-[#dab93a] font-semibold uppercase text-center">Our Services</h4>
+     <div class="items-center flex flex-col justify-center">
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Corporate Promotions & Gifts</p>
+        <p class="tab-links" onclick="opentab(event, 'experience')">Hygiene Services</p>
+      </div>
+      <div class="tab-contents-container -ml-[290px] -mt-10">
+      <div class="tab-contents active-tab text-left " id="skills" >
+        <ul class="">
+          <li>Corporate Gifts</li>
+          <li>Promotional Items</li>
+          <li>Branded Corporate Workwear</li>
+        </ul>
+      </div>
+      </div>
+      <div class="tab-contents-container ml-[330px] -mt-1">
+      <div class="tab-contents text-left" id="experience" >
+        <ul>
+        <li>Hygiene Dispenser Rental & Sales</li>
+        <li>Bathroom Paper & Consumables</li>
+        <li>Cleaning Equipment</li>
+        <li>Sanitary Bin Cleaning</li>
+        <li>Deep Cleaning</li>
+        <li>Full “Green” Chemical Ranges</li>
+        <li>Commercial Cleaning Chemicals</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- About us -->
+   <div class="w-full px-[12px] py-0 scroll-mt-10 mx-auto" id="aboutUs">
+      <h4 class="text-[#dab93a] font-semibold uppercase text-center">About us</h4>
+    <h2 class="text-3xl font-bold text-gray-800 mt-2 text-center">Excellence is our passion.</h2>
+    <p class="px-[10px] text-lg py-10 md:px-[100px]">
+      Our mission is to create synergies with our clients, ensure the clients focus on their core business while we take care of their branding and promotion and offer hygiene products.
+      We offer fully custom-made hygiene solutions to fit any budget as well as circumstances.
+      We service, supply, and install all bathroom related hygiene equipment and consumables as well as cleaning materials. By allowing us to take care of your hygiene needs we ensure our clients are able to focus on their main core business whilst receiving the highest level of hygiene.
+      
+      Our commitment is to provide our clients with hygiene equipment that meet their hygiene needs. With Manto Holdings, brace yourself to making a lasting impression on hygienically protecting your clients and employees alike. We are here to create synergy with you and elevate your brand in providing exceptional hygiene.
+      We rent, service, install and sell hygiene equipment and consumables and do it well!
+      Manto Holdings is a dedicated to renting, installing and selling hygiene equipment and consumables. Newly established in February 2024, we are bracing ourselves to build a reputation for excellence, reliability, and outstanding customer service. Our mission is to deliver top-quality products and services that meet the evolving needs of our clients.
+      </p>
+      <div class="flex flex-col md:items-center md:justify-center gap-10 px-20 md:flex md:flex-row md:gap-10">
+        <div class="border border-black-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-[lightHover] hover:-translate-y-1 duration-500 w-full md:w-1/2">
+            <h3 class="text-lg my-4 text-[#dab93a] ">OUR VISION</h3>
+            <p>To be the most trusted and respected hygiene equipment and consumables products provider company, known for our commitment to quality and customer satisfaction
+          </p>
+            <a href="" class="flex items-center gap-2 text-md:mt-5">Check out <img src="images/right-arrow.png" class="w-4"></a>
+        </div>
+        <div class="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-black cursor-pointer hover:bg-[lightHover] hover:-translate-y-1 duration-500 w-full md:w-1/2">
+            <h3 class="text-lg my-4 text-[#dab93a]">OUR MISSION</h3>
+            <p>To provide innovative and sustainable solutions that enhance the value and performance of our clients' businesses.
+            </p>
+            <a href="" class="flex items-center gap-2 text-sm mt-5">Check out <img src="images/right-arrow.png" class="w-4"></a>
+        </div>
+        </div>
+      
+    </div>
+      
+      
+        <!-- why choose us -->
+         <!-- <div class="flex justify-center items-center gap-10">
+          <div class="border border-white">
+            <h1 class="text-center text-[50px]">Why Choose <br> Manto Holdings?</h1>
+           </div>
+           
+           <div class="px-[100px] border border-white p-3 rounded-md w-[400px]">
+           <ul>
+            <li>An installation service and FREE training on the use of our hygiene equipment and consumables</li>
+            <li>A FREE consultation service</li>
+            <li>Our “RECOMMENDED” products come with a 5-year guarantee</li>
+            <li>Product Safety Data Sheets</li>
+            <li>Product Range brochures</li>
+            <li>Individual product brochures</li>
+            <li>Installation instructions</li>
+            <li>The LOWEST delivery cost</li>
+            <li>Turnkey solutions – advice, products, installations and training</li>
+           </ul>
+           </div>
+         </div> -->
+         <!-- Content Section -->
+    <div class="w-full pl-10 items-center flex justify-center flex-col text-left">
+      <h4 class="text-[#dab93a] font-semibold uppercase">Our Features</h4>
+      <h2 class="text-3xl font-bold text-gray-800 mt-2">Why Choose Manto Holdings?</h2>
+      <ul class="mt-6 space-y-4 text-center">
+        <!-- Second Item -->
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">An installation service and FREE training on the use of our hygiene equipment and consumables</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">A FREE consultation service</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Our “RECOMMENDED” products come with a 5-year guarantee</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Product Safety Data Sheets</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Product Range brochures</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Individual product brochures</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Installation instructions</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">The LOWEST delivery cost</h3>
+          </div>
+        </li>
+        <li class="flex items-start">
+          <span class="text-[#dab93a]">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          <div>
+            <h3 class="text-lg font-semibold">Turnkey solutions – advice, products, installations and training</h3>
+          </div>
+        </li>
+        </ul>
+        </div>
+  <!-- Section End -->
+         
+         <!-- <p class="p-[100px] text-lg">
+          Our company is founded on exceptional business ethics and passion for client satisfaction.
+          We aim to be the leader in our market, which encompasses all aspects of washroom hygiene, equipment and servicing.
+          The key elements to our success are to uphold the principles of service excellence, quality, integrity, respect and fairness to both the suppliers and clients.
+         </p> -->
+         
+       
+   </div>
+   <!-- contact -->
+    <div id="contact" class="scroll-mt-[60px] mb-20 py-10">
+      <h4 class="text-[#dab93a] font-semibold uppercase text-center mb-5">Get in touch</h4>
+   <p class="text-center text-lg mb-10">We would love to hear from you and discuss how we can help your business succeed.</p>
+   <div  class="bg-[#000000] text-white py-20 mx-0 rounded-md md:mx-20">
+    <div class="container mx-auto px-5 lg:flex justify-between items-start gap-5">
+      
+      <!-- Form Section -->
+      <div class="bg-[#000000] p-8 border border-white w-full lg:w-1/2 mb-8 lg:mb-0">
+       <h2 class="mb-4">Fill out the form and we will have the right person get back to you</h2>
+        
+        <form class="space-y-4">  
+          <input type="tel" class="w-full p-3 rounded bg-gray-200 text-black focus:outline-none" placeholder="Provide Phone Number" required>
+          <input type="email" class="w-full p-3 rounded bg-gray-200 text-black focus:outline-none" placeholder="Provide Email Address" required>
+          
+          <button type="submit" class="w-full bg-[#dab93a] hover:bg-[#e59828] text-[#101B2A] font-bold py-3">
+            Contact Us
+          </button>
+        </form>
+      </div>
+  
+      <!-- Information Section -->
+      <div class="bg-gradient-to-b from-[#dab93a] to-[#b88923] text-[#101B2A] p-8 w-full lg:w-1/2">
+        <h3 class="text-2xl font-semibold mb-4">When you contact us to start your journey with us now.</h3>
+        <ul class="list-none space-y-2 mb-6">
+          <li>Receive a call within one business day to discuss your goals, discover the latest trends and tactics in your area of interest.</li>
+          <!-- <li>Schedule a live demo tailored to your unique needs and objectives.</li> -->
+          <!-- <li>Walk away with fresh insights and actionable steps to help determine if Winnovations is right for you.</li> -->
+        </ul>
+        <h4 class="text-lg font-semibold">Prefer to chat right away?</h4>
+        <p class="mt-2">Call us right now: 
+          <a href="tel: +27 83 478 5879" class="text-[#dab93a] hover:underline">+27 83 478 5879</a>
+        </p>
+      </div>
+  
+    </div>
+  </div>
+</div>
+<hr class="h-[3px] mx-[100px]">
+    <!-- footer -->
+    <div class="w-full px-4 py-10 scroll-mt-10 flex justify-between items-center sm:flex sm:flex-col md:flex md:flex-row lg:flex lg:flex-row xl:flex xl:flex-row gap-5">
+      <div class="flex items-center flex-col gap-3 w-1/3 sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 px-4">
+        <i class="fa-solid fa-location-dot text-3xl text-[#dab93a]"></i>
+        <h1 class="sm:text-sm md:text-base lg:text-lg xl:text-xl">160 Constantia Drive, Constantia Kloof, Roodepoort</h1>
+        <p class="text-sm">Our Address</p>
+      </div>
+      <div class="flex items-center flex-col gap-3 w-1/3 sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 px-4">
+        <i class="fa-solid fa-envelope text-3xl text-[#dab93a]"></i>
+        <h1 class="sm:text-sm md:text-base lg:text-lg xl:text-xl">sales@mantoholdings.com</h1>
+        <p class="text-sm">Our Mailbox</p>
+      </div>
+      <div class="flex items-center flex-col gap-3 w-1/3 sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/3 px-4">
+        <i class="fa-solid fa-phone text-3xl text-[#dab93a]"></i>
+        <a href="tel: +27 83 478 5879" class="hover:underline sm:text-sm md:text-base lg:text-lg xl:text-xl">+27 83 478 5879</a>
+        <p class="text-sm">Our Phone number</p>
+      </div>
+    </div>
+     <!-- copyright -->
+      <div>
+      <div class="text-center mb-10">
+        Copyright © 2024 – 2024 Manto Holdings by <a href="https://math3wsl3vi.github.io/mantle-networks/"><span class="text-[#dab93a]">Mantle Networks</span></a>. All Rights Reserved. Our <a href="#"><span class="text-[#dab93a]">Privacy Policy</span></a>
+      </div>
+      <div class="flex justify-center items-center gap-5 mb-10">
+        <div class="border rounded-full flex items-center justify-center bg-[#dab93a] p-2">
+          <i class="fa-brands fa-instagram text-white"></i>
+        </div>
+        <div class="border rounded-full flex items-center justify-center bg-[#dab93a] p-2">
+          <i class="fa-brands fa-linkedin-in text-white"></i>
+        </div>
+        <div class="border rounded-full flex items-center justify-center bg-[#dab93a] p-2">
+          <i class="fa-brands fa-x-twitter text-white"></i>
+        </div>
+        <div class="border rounded-full flex items-center justify-center bg-[#dab93a] p-2">
+          <i class="fa-brands fa-facebook text-white"></i>
+        </div>
+      </div>
+      <div class="border border-gray-900 p-5 w-5 h-5 flex items-center justify-center">
+        <i class="fa-solid fa-arrow-up text-2xl text-[#dab93a]" onclick="scrollToTop()"></i>
+      </div>
+     
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

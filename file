@@ -1,0 +1,54 @@
+ <!---menu for mobile-->
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 h-screen z-50 bg-rose-50 transition duration-500 
+        dark:bg-[#2a004a] dark:text-white">
+
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="images/close-black.png" alt="" class="w-5 cursor-pointer dark:hidden">
+                <img src="images/close-white.png" alt="" class="w-5 cursor-pointer hidden dark:block">
+            </div>
+            <li><a href="#top" onclick="closeMenu()">HOME</a></li>
+            <li><a href="#about" onclick="closeMenu()">About</a></li>
+            <li><a href="#service" onclick="closeMenu()">Services</a></li>
+            <li><a href="#developers" onclick="closeMenu()">Developers</a></li>
+            <li><a href="#work" onclick="closeMenu()">Portfolio</a></li>
+            <li><a href="#pricing" onclick="closeMenu()">Pricing</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+
+        </ul>
+    </nav>
+     nav 
+       <div class="w-full flex justify-between bg-[#000000]">
+      <div>
+        <img src="images/mantoLogo.png" alt="logo" class="w-40 h-auto ml-3 mb-2">
+      </div>
+      <nav class=" px-5 py-2 lg:px-8 xl:px-[8%] flex items-center justify-between z-50">
+        <ul class="flex flec-col gap-6 text-white">
+            <li class="text-lg  hover:text-[#dab93a]"><a href="#top">Home</a></li>
+            <li class="text-lg  hover:text-[#dab93a]"><a href="#services">Services</a></li>
+            <li class="text-lg  hover:text-[#dab93a]"><a href="#aboutUs">About us</a></li>
+            <li class="text-lg  hover:text-[#dab93a]"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div> 
+     <div class="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] dark:hidden">
+      <img src="images/header-bg-color.png" alt="" class="w-full ">
+  </div>
+   <div class="w-full px-[12px] py-10 scroll-mt-10" id="contact">
+    <h1 class="text-center text-lg">Get in touch</h1>
+    <p class="text-center text-[#dab93a] text-2xl">We would love to hear from you and discuss how we can help your business succeed.</p>
+    <div>
+      <form action="" method="POST"  class="max-w-2xl mx-auto">
+        <div class="grid grid-cols-auto gap-6 mt-10 mb-8">
+            <input type="text" placeholder="Enter Your name" class="flex-1 p-3 outline-none border-[0.5px] border-gray-500 rounded-md bg-white dark:text-black" required name="name">
+            <input type="email" placeholder="Enter Your Email" class="flex-1 p-3 outline-none border-[0.5px] border-gray-500 rounded-md bg-white dark:text-black" required name="email">
+        </div>
+        <textarea rows="6" placeholder="Enter Your Message" class="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:text-black" name="message" required></textarea>
+        <button class="py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80 text-white rounded-full mx-auto hover:bg-black duration-500
+        dark:border dark:border-white dark:hover:bg-[#2a004a]" type="submit">
+            Submit <img src="images/right-arrow-white.png" class="w-4" alt="">
+        </button>
+    </form>
+    <p class="text-center">Thank you for considering Manto Holdings as your trusted partner in providing corporate hygiene. We look forward to the opportunity to work with you.</p>
+    </div>
+    <hr class="text-white px-[200px] mt-10">
+  </div>
