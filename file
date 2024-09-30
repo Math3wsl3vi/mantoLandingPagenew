@@ -85,3 +85,24 @@
     </div>
   </div>
 </div> -->
+
+ <!-- why choose us -->
+         <!-- <div class="flex justify-center items-center gap-10">
+          <div class="border border-white">
+            <h1 class="text-center text-[50px]">Why Choose <br> Manto Holdings?</h1>
+           </div>
+           
+           <div class="px-[100px] border border-white p-3 rounded-md w-[400px]">
+           <ul>
+            <li>An installation service and FREE training on the use of our hygiene equipment and consumables</li>
+            <li>A FREE consultation service</li>
+            <li>Our “RECOMMENDED” products come with a 5-year guarantee</li>
+            <li>Product Safety Data Sheets</li>
+            <li>Product Range brochures</li>
+            <li>Individual product brochures</li>
+            <li>Installation instructions</li>
+            <li>The LOWEST delivery cost</li>
+            <li>Turnkey solutions – advice, products, installations and training</li>
+           </ul>
+           </div>
+         </div> -->
