@@ -11,52 +11,37 @@ function closeMenu(){
     sideMenu.style.transform = 'translateX(16rem)';
 }
 
-// window.addEventListener('scroll', ()=>{
-//     if(scrollY > 50){
-//         navBar.classList.add('bg-white','bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm', 'dark:bg-darkTheme', 'dark:shadow-white/20')
-//         navLinks.classList.remove('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/50', 'dark:bg-transparent', 'text-white')
-//     }
-//     else{
-//         navBar.classList.remove('bg-white','bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm', 'dark:bg-darkTheme', 'dark:shadow-white/20')
-//         navLinks.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/50', 'dark:bg-transparent', 'text-white')
-
-//     }
-// })
-
-//light mode and dark mode
-
-if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    document.documentElement.classList.add('dark')
-  } else {
-    document.documentElement.classList.remove('dark')
-  }
-
-  function toggleTheme(){
-        document.documentElement.classList.toggle('dark')
-
-    if( document.documentElement.classList.contains('dark')){
-        localStorage.theme = 'dark';
+window.addEventListener('scroll', ()=>{
+    if(scrollY > 50){
+        navBar.classList.add('bg-white','bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm', 'dark:bg-darkTheme', 'dark:shadow-white/20')
+        navLinks.classList.remove('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/50', 'dark:bg-transparent', 'text-white')
     }
     else{
-        localStorage.theme = 'light';
-    }
+        navBar.classList.remove('bg-white','bg-opacity-50', 'backdrop-blur-lg', 'shadow-sm', 'dark:bg-darkTheme', 'dark:shadow-white/20')
+        navLinks.classList.add('bg-white', 'shadow-sm', 'bg-opacity-50', 'dark:border', 'dark:border-white/50', 'dark:bg-transparent', 'text-white')
+
+    } 
+})
+// Get the menu icon elements
+const menuIconBlack = document.querySelector('#menuIcon img:nth-child(1)');
+const menuIconWhite = document.querySelector('#menuIcon img:nth-child(2)');
+
+// Function to change menu icon on scroll
+function changeMenuIcon() {
+  // Check if the user has scrolled down
+  if (window.scrollY > 100) {
+    // Show the black menu icon and hide the white menu icon
+    menuIconBlack.classList.remove('hidden');
+    menuIconWhite.classList.add('hidden');
+  } else {
+    // Show the white menu icon and hide the black menu icon
+    menuIconBlack.classList.add('hidden');
+    menuIconWhite.classList.remove('hidden');
   }
+}
 
-  const cardInner = document.getElementById('card-inner');
-  const learnMoreBtn = document.getElementById('learn-more-btn');
-  const goBackBtn = document.getElementById('go-back-btn');
-
-  // Flip the card to show the back
-  learnMoreBtn.addEventListener('click', () => {
-    cardInner.style.transform = 'rotateY(180deg)';
-  });
-
-  // Flip the card back to the front
-  goBackBtn.addEventListener('click', () => {
-    cardInner.style.transform = 'rotateY(0deg)';
-  });
-
- 
+// Add event listener to the window's scroll event
+window.addEventListener('scroll', changeMenuIcon);
   
   function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
